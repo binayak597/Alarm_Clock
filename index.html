@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/clock-favicon.png">
+</head>
+<body>
+    
+
+     <!-- Header Title -->
+     <div id="header-title">
+        <span>ALARM CLOCK</span>
+    </div>
+
+    <!-- Main Container -->
+    <!-- flex box -->
+    <section id="container">
+
+        <!-- Alarm Container -->
+        <!-- flex box -->
+        <div id="alarm-container">
+
+            <!-- clock image -->
+            <div id="clock-img">
+                <img src="images/clock-favicon.png" alt="clock-img">
+            </div>
+
+            <!-- display-current-date -->
+            <!-- flex box -->
+            <div id="current-date">
+                <span id="week">weekDay</span>
+                <span id="month">month</span>
+                <span id="day">day</span>
+                <span id="year">year</span>
+            </div>
+
+            <!-- display-current-time -->
+            <div id="current-time">
+                <span>00 : 00 : 00</span>
+            </div>
+
+            <!-- alarm input container -->
+            <div id="alarm-input">
+                <form>
+                    <select name="hours" id="hours" required></select>
+                    <select name="minutes" id="minutes" required></select>
+                    <select name="seconds" id="seconds" required></select>
+                    <select name="am-pm" id="am-pm" required>
+                        <option value="AM/PM" selected hidden>AM/PM</option>
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                    <button id="submit-btn" class="btn" type="submit"> Set Alarm </button>
+                </form>
+            </div>
+
+            <!-- Stop Alarm Button -->
+            <div id="stop-alarm"> 
+                <button class="btn">Stop Alarm</button>
+            </div>
+
+            <!-- display recent alarms -->
+
+            <div id="recent-alarm-container">
+                <h3>RECENT ALARMS</h3>
+                <div id="alarms-list"></div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- javascript file -->
+    <script src="main.js"></script>
+</body>
+</html>
