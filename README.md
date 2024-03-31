@@ -20,5 +20,5 @@ Contact For any questions or inquiries, please contact
 
 ✅ Linkedin : https://www.linkedin.com/in/binayak-mukherjee-278396195/
 
-✅ Github : ps://binayak597.github.io/Alarm_Clock/
+✅ Github : https://github.com/binayak597
 Enjoy your alarm clock experience!
